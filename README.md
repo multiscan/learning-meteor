@@ -15,12 +15,7 @@ RUN curl https://install.meteor.com/ | sh
 
 Now, as it is typical in the js world, there is a choice among more than 5 
 options for the view framework. I need to use `react`. Therefore, I chose 
-to follow the react version of the todo. But things start already nicely: 
-there is a commad for creating a react app scheleton, but it is not used by
-the tutorial. Instead, the tutorial starts with a standard `blaze`-based app.
-
-At this point, I already miss RoR soo much that I'd like to stop...
-
+to follow the react version of the todo.
 Let's try to create the standard application template:
 
 ```

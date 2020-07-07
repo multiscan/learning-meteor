@@ -18,7 +18,7 @@ nuke:
 
 init: app
 	[ ! -f app/package.json ] # Please run `make nuke` if you want to restart with a fresh app
-	docker-compose run --rm --entrypoint=/bin/bash --workdir=/home/node app /home/node/.meteor/meteor create /app
+	docker-compose run --rm --entrypoint=/bin/bash --workdir=/home/node app /home/node/.meteor/meteor create --react /app
 
 app:
 	mkdir app
