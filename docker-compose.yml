@@ -45,6 +45,7 @@ services:
       - traefik.http.routers.${APP_NAME}.rule=Host("${APP_NAME}.${APP_DOMAIN}")
       - traefik.http.routers.${APP_NAME}.tls=true
       - traefik.http.services.${APP_NAME}.loadbalancer.server.port=3000
+      - traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto = https
     depends_on:
       - db
 
